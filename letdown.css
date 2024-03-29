@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e0e0; /* Light pinkish background */
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ff7eb9; /* Light pinkish color for headings */
+  }
+  
+  p {
+    color: #333; /* Dark text color */
+  }
+  
+  .letter-container {
+    background-color: #fff; /* White background for letter container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .download-button {
+    background-color: #ff7eb9; /* Light pinkish button background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #ff5f9a; /* Light pinkish button on hover */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    .letter-container {
+      padding: 10px;
+    }
+  
+    .download-button {
+      padding: 8px 16px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .download-button {
+    background-color: #ff7eb9; /* Light pinkish button background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .download-button:hover {
+    background-color: #ff5f9a; /* Light pinkish button on hover */
+    animation: none; /* Disable animation on hover */
+  }
+  
